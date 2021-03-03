@@ -5,4 +5,4 @@ svn-commit*.tmp
 .classpath
 .project
 .settings/
-*/target/*
+/target/
