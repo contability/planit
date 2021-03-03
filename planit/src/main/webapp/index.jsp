@@ -10,5 +10,5 @@
 <%  
 String contextPath = request.getContextPath();
 
-response.sendRedirect(contextPath + "/portal.do");
+response.sendRedirect(contextPath + "/portal.go");
 %>
