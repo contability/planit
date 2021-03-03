@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 .classpath
 .project
 .settings
 */target/*
 
+=======
+.git
+.svn
+_svn
+svn-commit*.tmp
+.classpath
+.project
+.settings/
+*/target/*
+>>>>>>> branch 'master' of https://github.com/contability/planit.git
