@@ -1,6 +1,8 @@
-/.classpath
-/.project
-/.settings/
-/pom.xml
-/src/
-/target/
+.git
+.svn
+_svn
+svn-commit*.tmp
+.classpath
+.project
+.settings/
+*/target/*
