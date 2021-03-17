@@ -19,7 +19,7 @@
 	<properties>
 	    <spring.maven.artifact.version>3.9.15.RELEASE</spring.maven.artifact.version>
 		<egovframework.rte.version>3.10.0</egovframework.rte.version>
-		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+		<org.springframework-version>4.3.25.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
@@ -194,6 +194,19 @@
 		    <version>${org.springframework-version}</version>
 		</dependency>
 		
+		<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+    <version>${org.springframework-version}</version>
+</dependency>
+
+<!-- Spring-jdbc -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
 		<!-- security -->
 		<dependency>
 			<groupId>egovframework.rte</groupId>
@@ -233,11 +246,19 @@
 		<!-- slf4j LogBack End -->
 		
 		<!-- DataBase -->
-		<dependency>
+<!-- 		<dependency>
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-dbcp2</artifactId>
 		    <version>2.4.0</version>
 		</dependency>
+ -->		
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>HikariCP</artifactId>
+		    <version>3.3.1</version>
+		</dependency>
+
         
         <!-- JDBC -->
 		<dependency>
@@ -245,6 +266,12 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.1.0.7.0</version>
 		</dependency>
+		
+		<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>3.6.3.Final</version>
+</dependency>
 
 
 
