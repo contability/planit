@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="kr.co.planit.mapper.PlnUserMapper">
+	
+	<resultMap type="plnUser" id="plnUserMap">
+		<id column="USER_ID" property="userId"/>
+		<result column="USER_NM" property="userNm"/>
+		<result column="PASSWORD" property="password"/>
+		<result column="USER_TYPE" property="userType"/>
+		<result column="USE_AT" property="useAt"/>
+	</resultMap>
+	
+	<select id="List" resultMap="plnUserMap">
+		SELECT
+			USER_ID,
+			USER_NM,
+			PASSWORD,
+			USER_TYPE,
+			USE_AT
+		FROM
+			PLN_USER
+		ORDER BY USER_ID ASC
+	</select>
+	
+</mapper>
