@@ -10,7 +10,7 @@
 		<result column="USE_AT" property="useAt"/>
 	</resultMap>
 	
-	<select id="List" resultMap="plnUserMap">
+	<select id="list" resultMap="plnUserMap">
 		SELECT
 			USER_ID,
 			USER_NM,

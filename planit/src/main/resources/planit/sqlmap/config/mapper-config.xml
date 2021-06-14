@@ -7,7 +7,12 @@
 		<setting  name="mapUnderscoreToCamelCase" value="true"/>
 	</settings>
 	
-	<mappers>
+	<typeAliases>
 		<package name="kr.co.planit.dto"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="/sqlmap/mappers/*.xml"/>
 	</mappers>
+	
 </configuration>

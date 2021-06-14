@@ -1,32 +1,18 @@
 package kr.co.planit.controller;
 
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import kr.co.planit.service.PlnUserService;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class LoginController {
 	
-	@Resource
-	PlnUserService plnUserService;
+//	@Resource
+//	private PlnUserService plnUserService;
 	
-	@RequestMapping(value = "/portal.go")
+	@RequestMapping(value = "/portal.go", method = RequestMethod.GET)
 	public String loginPage() {
+		System.out.println("anwlagnwanglni");
 		return "portal";
 	}
-	
-	@RequestMapping(value = "/test.go")
-	public String test(Model model) {
-		
-		model.addAttribute("rows", plnUserService.list());
-		
-		return "test";
-	}
-	
-	
-	
 }
