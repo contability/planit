@@ -1,8 +1,0 @@
-.git
-.svn
-_svn
-svn-commit*.tmp
-.classpath
-.project
-.settings/
-/target/

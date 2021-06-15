@@ -7,23 +7,23 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 		
-	<!-- <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-		<property name="jdbcUrl" value="jdbc:oracle:thin:@222.117.95.171:1521:planit" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@222.117.95.171:4100:planit" />
 		<property name="username" value="planit"/>
 		<property name="password" value="planit"/>
 	</bean>
 	
 	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
 		<constructor-arg ref="hikariConfig"/>
-	</bean> -->
+	</bean>
 	
-	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+	<!-- <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-		<property name="jdbcUrl" value="jdbc:oracle:thin:@222.117.95.171:1521:planit" />
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@222.117.95.171:4100:planit" />
 		<property name="username" value="planit"/>
 		<property name="password" value="planit"/>
-	</bean>
+	</bean> -->
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
