@@ -9,12 +9,14 @@
 	
 	<mvc:annotation-driven/> 
 	
-	<!-- <mvc:resources location="/resources/" mapping="/resources/**"/> -->
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
 	
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/"/>
 		<property name="suffix" value=".jsp"/>
 	</bean>
+	
+	<context:component-scan base-package="kr.co.planit"/>
 	
 	<!-- <mvc:interceptors>
 		<mvc:interceptor>
